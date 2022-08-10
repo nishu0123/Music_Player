@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+   <div class="mian_div">
+       <div class="music_container">
+           <h2 id="title">title</h2>
+           <h3 id="artist">artist name</h3>
+           <div class="img_container">
+                <img src="./img/nishu-1.jpg" alt="album picture">
+           </div>
+           <audio src="./music/nishu-1.mp3" ></audio>
+           <!-- progress bar-->
+           <div class="progressbar_container" id="progressbar_container" > 
+                <div class="progressduratio_meter">
+                    <div id="current_duration">0.00</div>
+                    <div id="duration">2.45</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+           </div>
+           <!--controls-->
+           <div class="music_controls">
+
+            <i class="fas fa-backward" id="prev" title="previous"></i>
+            <i class="fas fa-play" id="play" title="play"></i>
+            <i class="fas fa-forward" id="next" title="next"></i>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="./index.js"></script>
+</html>
